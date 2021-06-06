@@ -1,0 +1,10 @@
+CREATE TABLE "jogador" (
+	"usuario"	TEXT NOT NULL UNIQUE,
+	"pwd"	TEXT NOT NULL,
+	"email"	TEXT NOT NULL,
+	"cpf"	TEXT NOT NULL UNIQUE,
+	"partidas"	INTEGER DEFAULT 0,
+	"vitorias"	INTEGER DEFAULT 0,
+	"derrotas"	INTEGER DEFAULT 0,
+	"empates"	INTEGER DEFAULT 0
+);
